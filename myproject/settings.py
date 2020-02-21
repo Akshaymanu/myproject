@@ -25,7 +25,9 @@ SECRET_KEY = 'r5wu3^d$qgem4sgnh^r*_j2z!add5jl=zomy6pri+#cqt($ros'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://git.heroku.com/manu75.git','127.0.0.1'
+
+]
 
 
 # Application definition

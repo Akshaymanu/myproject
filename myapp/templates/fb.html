@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+    .ab{
+        min-height: 100px;
+        background-color:#2f55a4;
+        width:100%;
+    }
+    .ac{
+        min-height: 800px;
+        background-color:#e1eff0;
+        background-image: linear-gradient(white,#e1eff0);
+       
+    }
+    .ad{
+        min-height: 800px;
+        background-color:#edf0f5;
+        background-image: linear-gradient(white,#e1eff0);
+       
+    }
+    .ae{
+        background-color: lavender;
+    }
+    .af{background-color: lavenderblush;
+
+    }
+    .ag{
+        background-color: lemonchiffon;
+    }
+    .button{
+        padding: 15px 25px;
+        font: 24px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        background-color: darkslategray;
+        border-radius: 20px;
+        box-shadow: 0 9px #999;
+}
+    }
+    .button:hover {background-color:white}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+</style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="ab col-lg-12">
+            <div class="col-lg-6">
+                <img src="{% static 'fb1.jpg' class="col-md-4 col-md-offset-4 img-responsive" %}" >
+              </div>
+            <div class="col-lg-6"> <input type="text" placeholder="FULL NAME"/> &nbsp;<input type="text" placeholder="EMAIL ADDRESS"/>&nbsp; <input type="button" value="Login" style="margin-top:14px; background-color: blue; "/></div>
+        </div>
+        <div class="row">
+         <div class="col-lg-12">
+             <div class="ac col-lg-6"><font face="Verdana" size="5%"><br><b>Facebook helps you connect and share with the people in your life.</b><br> <img src="{% static 'map.jpg' class="col-md-4 col-md-offset-4 img-responsive" %}" ></font> 
+             </div>
+             <div class="ad col-lg-6"><font size="6.5%"><b>Create an account </b></font><br><br><font size="3%">It's quick and easy <br><br></font>
+                <div id="inputs">
+                    <input type="text" height="20%" placeholder="First name"/>&nbsp;&nbsp;<input type="text" placeholder="Surname"/><br><br>
+                    <input type="email" placeholder="Email address"/><br><br>
+                    <input type="number" placeholder="Mobile number"/><br><br>
+                    <p>Birthday</p>
+                    <input type="date"><a href="#">why do i need to provide my date of birth?</a><br><br>
+                    <input type="radio" name="gender" value="male">Male &nbsp;
+                    <input type="radio" name="gender" value="female">Female<br><br>
+                    By clicking Submit, you agree to our Terms and<br> confirm that you have read our Data Policy, including our<br>Cookie Use Policy.You may receive Sms message notifications<br>from Facebook and can opt out at any time.<br>
+                    <button class="button">Submit</button><br><br>
+                   <a href="#" style="font-size: large;">Create a Page</a>&nbsp;for a celebrity, brand or business .   
+                        
+            </div>
+             </div>
+         </div>
+        </div>
+        </div>
+        </div>
+        
+</body>
+</html>
